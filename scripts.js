@@ -95,7 +95,7 @@ let imagesData = [data0,data1, data2,
                     data3,data4,data5,
                     data6,data7, data8,
                     data9,data10,data11 ];
-$('#photo').attr('src', imagesData[currentPhoto].photo);
+/*$('#photo').attr('src', imagesData[currentPhoto].photo);*/
 
 
 
@@ -108,7 +108,10 @@ findValue(-6);*/
 
 
 
-
+for(let i =0;i<imagesData.length;i++){
+  $('#photo').attr('src', imagesData[i].photo);
+  console.log(imagesData[i].photo +" prefreshed");
+}
 
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', imagesData[photoNumber].photo);
