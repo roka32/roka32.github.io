@@ -451,7 +451,7 @@ p{
     align-items: center;
     font-family: 'Girassol', cursive;
     user-select: none;
-    border-radius: 5px;
+    border-radius: 3px;
     border: rgb(128, 128, 128) 6px;
     border-style: inset;
   }
