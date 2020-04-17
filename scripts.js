@@ -2,84 +2,84 @@
 
 
 let data0 = {
-    photo: 'pictures/Deku.png',
+    photo: 'pictures/Deku.PNG',
     title: 'Izuku Midoriya',
     description: 'Izuku Midoriya , also known as Deku , is the primary protagonist of the My Hero Academia manga and anime series.Though born without a Quirk, Izuku manages to catch the attention of the legendary hero All Might due to his innate heroism and has since become his close pupil as well as a student in Class 1-A at U.A. High School. All Might passed on his Quirk to Izuku, making him the ninth holder of One For All.',
     tooltipp:'Deku'
   };
 
   let data1 = {
-    photo: 'pictures/Bakugo.png',
+    photo: 'pictures/Bakugo.PNG',
     title: 'Katsuki Bakugo',
     description: 'Katsuki Bakugo , also known as Kacchan by his childhood friends, is a student in Class 1-A at U.A. High School, training to become a Pro Hero. He is the deuteragonist of the series.',
     tooltipp:'Bakugo'
   };
 
   let data2 = {
-    photo: 'pictures/Todoroki.png',
+    photo: 'pictures/Todoroki.PNG',
     title: 'Shoto Todoroki',
     description: 'Shoto Todoroki is a student in Class 1-A at U.A. High School, where he got in through official recommendations and is training to become a Pro Hero. He is the youngest son of Endeavor, the No. 1 Hero, and one of the main protagonists of the series.',
     tooltipp:'Todoroki'
   };
 
   let data3 = {
-    photo: 'pictures/Mirio.png',
+    photo: 'pictures/Mirio.PNG',
     title: 'Mirio Togata',
     description: "Mirio Togata, also known by his hero name Lemillion , is a student in Class 3-B at U.A. High School and is part of The Big 3. Before Izuku Midoriya, Mirio was the top candidate for All Might's successor and inheritor of One For All.",
     tooltipp:'Lemillion'
   };
 
   let data4 = {
-    photo: 'pictures/AllMight.png',
+    photo: 'pictures/AllMight.PNG',
     title: 'Toshinori Yagi (All Might)',
     description: "Toshinori Yagi, more commonly known by his hero name, All Might, is the tritagonist of My Hero Academia. All Might is the former No. 1 Hero who bore the title of the world's Symbol of Peace.  All Might was the eighth holder of the One For All Quirk after receiving it from Nana Shimura. He has since passed the torch to Izuku Midoriya, whom he is grooming to be his successor. After using up all the embers of One For All to defeat All For One, All Might retired and ended his era as the world's greatest hero.",
     tooltipp:'All Might'
   };
 
   let data5 = {
-    photo: 'pictures/Aizawa.png',
+    photo: 'pictures/Aizawa.PNG',
     title: 'Shota Aizawa',
     description: "Shota Aizawa , also known as the Erasure Hero: Eraser Head , is a Pro Hero and the homeroom teacher of U.A.'s Class 1-A.",
     tooltipp:'Eraser Head'
   };
 
   let data6 = {
-    photo: 'pictures/GranTorino.png',
+    photo: 'pictures/GranTorino.PNG',
     title: 'Sorahiko Torino',
     description: "Sorahiko Torino, also known by his hero name Gran Torino, is a retired Pro Hero, former homeroom teacher at U.A. High School, and mentor to Toshinori Yagi and Izuku Midoriya. Ever since the Hideout Raid Arc, despite being retired he continues assisting the Police Force in investigating the League of Villains.",
     tooltipp:'Gran Torino'
   };
 
   let data7 = {
-    photo: 'pictures/Endeavor.png',
+    photo: 'pictures/Endeavor.PNG',
     title: 'Enji Todoroki',
     description: "Enji Todoroki, also known as Flame Hero: Endeavor, is the Pro Hero with the highest tally of resolved cases in history and father of Shoto, Fuyumi, Natsuo, and Toya Todoroki. Following All Might's retirement, Enji temporarily became the No. 1 Hero after being the No. 2 Hero for a very long time and after the latest JP Hero Billboards Chart announcement, officially became the No. 1 Hero. ",
     tooltipp:'Endeavor'
   };
 
   let data8 = {
-    photo: 'pictures/Hawks.png',
+    photo: 'pictures/Hawks.PNG',
     title: 'Keigo Takami',
     description: "Keigo Takami, also known as Wing Hero: Hawks, is the former No. 3 Pro Hero and the current No. 2 Pro Hero.",
     tooltipp:'Hawks'
   };
 
   let data9 = {
-    photo: 'pictures/AllForOne3.png',
+    photo: 'pictures/AllForOne3.PNG',
     title: 'All For One',
     description: "All For One, real name Shigaraki, was the true leader and benefactor of the League of Villains, the primary antagonist of the Hideout Raid Arc and the central antagonist of the series, along with Tomura Shigaraki. Once Japan's most powerful villain and All Might's arch-nemesis, his true motives are unclear and his true identity is unknown. His current goal is to raise Tomura to become his eventual successor. He is currently under police custody and imprisoned in Tartarus.",
     tooltipp:'All For One'
   };
 
   let data10 = {
-    photo: 'pictures/Tomura.png',
+    photo: 'pictures/Tomura.PNG',
     title: 'Tomura Shigaraki',
     description: `Tomura Shigaraki, real name Tenko Shimura, was the leader of the League of Villains after his master All For One's defeat and arrest, and is the primary antagonist of the series. He made his first major appearance as one of the main antagonists of the U.S.J. Arc. Like the rest of the League, his goal is to kill All Might, the "Symbol of Peace," thus destroying the society he represents and to create a new one with a new form of justice in his own image.`,
     tooltipp:'Tomura Shigaraki'
   };
 
   let data11 = {
-    photo: 'pictures/Chisaki.png',
+    photo: 'pictures/Chisaki.PNG',
     title: 'Kai Chisaki',
     description: "Kai Chisaki, also known by the villain name Overhaul, was the Yakuza Captain of the Shie Hassaikai. He serves as the primary antagonist of the Shie Hassaikai Arc and is currently imprisoned in Tartarus.",
     tooltipp:'Overhaul'
