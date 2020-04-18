@@ -109,7 +109,7 @@ findValue(-6);*/
 
 
 for(let i =0;i<imagesData.length;i++){
-  $('#photo').attr('src', imagesData[i].photo);
+  $('#box0').attr('src', imagesData[i].photo);
   console.log(imagesData[i].photo +" prefreshed");
 }
 
@@ -139,7 +139,7 @@ let loadPhoto = (photoNumber) => {
 
 let loadThumbnail = (ZeroNum) =>{
 
-  function Circular(arr, startIntex){
+  /*function Circular(arr, startIntex){
     this.arr = arr;
     this.startIntex = startIntex || 0;
   }
@@ -158,13 +158,13 @@ let loadThumbnail = (ZeroNum) =>{
   
   Circular.prototype.current = function(){
     return this.arr[this.currentIndex];
-  }
+  }*/
 
     
     /**
      *     USAGE
      */
-    let c = new Circular([0,1,2,3,4,5,6,7,8,9,10,11]);
+   /* let c = new Circular([0,1,2,3,4,5,6,7,8,9,10,11]);*/
     /*c.current(); // 1
     c.next();    // 2
     c.current(); // 2
@@ -184,7 +184,7 @@ let loadThumbnail = (ZeroNum) =>{
       k++;
     }*/
 
-    for(let k=0;k<ZeroNum+1;k++){c.next(); }
+   /* for(let k=0;k<ZeroNum+1;k++){c.next(); }
     
   
   
@@ -200,13 +200,11 @@ let loadThumbnail = (ZeroNum) =>{
 
      
     
-   let posArray = [zeronum_minus_two,zeronum_minus_one,ZeroNum,zeronum_plus_one,zeronum_plus_two];
-    
-    
-    
-    
-  
-    $('#box0').attr('src', imagesData[posArray[0]].photo);
+   /*let posArray = [zeronum_minus_two,zeronum_minus_one,ZeroNum,zeronum_plus_one,zeronum_plus_two];
+   
+   
+   
+       $('#box0').attr('src', imagesData[posArray[0]].photo);
     $('#box1').attr('src', imagesData[posArray[1]].photo);
     $('#box2').attr('src', imagesData[posArray[2]].photo);
     $('#box3').attr('src', imagesData[posArray[3]].photo);
@@ -217,9 +215,37 @@ let loadThumbnail = (ZeroNum) =>{
     $('.tooltiptext2').text( imagesData[posArray[2]].tooltipp);
     $('.tooltiptext3').text( imagesData[posArray[3]].tooltipp);
     $('.tooltiptext4').text( imagesData[posArray[4]].tooltipp);
+   
+   
+   
+   
+   */
+    
+   var array = [0,1, 2, 3, 4,5,6,7,8,9,10,11];
+
+   mutate = (arr,index) => {
+    let lenght =array.length;
+    if(Math.abs(index)%lenght ==0 ){ return arr[0]}
+     let x = index > -1 ? arr[index%arr.length] :  arr[lenght-Math.abs(index)%lenght] ;
+     return x;
+    }
+    
+    
+  
+    $('#box0').attr('src', imagesData[mutate(array,ZeroNum-2)].photo);
+    $('#box1').attr('src', imagesData[mutate(array,ZeroNum-1)].photo);
+    $('#box2').attr('src', imagesData[mutate(array,ZeroNum)].photo);
+    $('#box3').attr('src', imagesData[mutate(array,ZeroNum+1)].photo);
+    $('#box4').attr('src', imagesData[mutate(array,ZeroNum+2)].photo);
+
+    $('.tooltiptext0').text( imagesData[mutate(array,ZeroNum-2)].tooltipp);
+    $('.tooltiptext1').text( imagesData[mutate(array,ZeroNum-1)].tooltipp);
+    $('.tooltiptext2').text( imagesData[mutate(array,ZeroNum)].tooltipp);
+    $('.tooltiptext3').text( imagesData[mutate(array,ZeroNum+1)].tooltipp);
+    $('.tooltiptext4').text( imagesData[mutate(array,ZeroNum+2)].tooltipp);
 
     $('.textpos').text(`${currentPhoto+1}/12`);
-
+    let posArray = [mutate(array,ZeroNum-2),mutate(array,ZeroNum-1),mutate(array,ZeroNum),mutate(array,ZeroNum+1),mutate(array,ZeroNum+2)]
     return posArray;
   
     }
@@ -357,6 +383,35 @@ loadThumbnail(currentPhoto);
   
   
  
+document.addEventListener("keydown", function(event) {
   
+  console.log(event);
+    
+  if(event.which ==39){
+    if(currentPhoto == imagesData.length-1){
+      currentPhoto = -1;
+  }
+  currentPhoto++;
+  
+  loadPhoto(currentPhoto);
+  loadThumbnail(currentPhoto);
+  }
+  if(event.which ==37){
+    if(currentPhoto === 0){
+      currentPhoto = imagesData.length;
+  }
+  currentPhoto--;
+  loadPhoto(currentPhoto);
+  loadThumbnail(currentPhoto);
+
+  }
+  if(event.which ==81){
+    alert("NE nyomogasd azt a kurva 'q' gombot!!!")
+  }
+  
+  if(event.which ==186){
+    alert("Az 'é'-t se te gyökér...")
+  }
+});
   
   
