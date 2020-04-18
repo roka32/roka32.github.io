@@ -262,7 +262,7 @@ function myMoveDickAnimation() {
 var pos = 0;
 var id = setInterval(frame, 5);
 function frame() {
-  if (pos == 700) {
+  if (pos == 600) {
     $('#animate').css('visibility','hidden')
     clearInterval(id);
   } else {
