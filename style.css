@@ -2,6 +2,7 @@ body{
     /*background-image: url("./pictures/824332-grey-wallpaper.jpg");*/
     background-image: radial-gradient(rgb(255, 255, 255), rgb(221, 221, 221), rgb(83, 83, 83));
     margin: 0;
+    
    
 
 }
@@ -13,6 +14,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around ; 
+    
 }
 
 .viewerBlock{
@@ -460,4 +462,20 @@ p{
     vertical-align: middle ;
   }
 
+  /*arminnak egy kis vicc*/
+
+    
+  
+  #animate {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url();
+    align-self: start;
+    top:0px;
+    visibility: hidden;
+  }
+  #animate{
+    z-index: 10;
+  }
   

@@ -253,8 +253,30 @@ let loadThumbnail = (ZeroNum) =>{
 loadPhoto(currentPhoto);
 loadThumbnail(currentPhoto);
 
+/*-----------------------------------DICK*/
+function myMoveDickAnimation() {
+  $('#animate').css('visibility','visible');
+ 
+     
+  var elem = document.getElementById("animate");   
+var pos = 0;
+var id = setInterval(frame, 5);
+function frame() {
+  if (pos == 700) {
+    $('#animate').css('visibility','hidden')
+    clearInterval(id);
+  } else {
+    pos++; 
+    elem.style.top = pos + "px"; 
+    elem.style.left = pos + "px"; 
+  }
+}
+  
+}
+/*-----------------------------------DICK*/
   
   $('#arrowRightCont').click(() => {
+    myMoveDickAnimation();
     if(currentPhoto == imagesData.length-1){
         currentPhoto = -1;
     }
@@ -264,7 +286,10 @@ loadThumbnail(currentPhoto);
     loadThumbnail(currentPhoto);
   })
 
+
+
   $('#arrowLeftCont').click(() => {
+    myMoveDickAnimation();
     if(currentPhoto === 0){
         currentPhoto = imagesData.length;
     }
@@ -289,10 +314,11 @@ loadThumbnail(currentPhoto);
     });
   });
 
-
+  
 
   $('#box0').click(() => {
-
+    myMoveDickAnimation();
+    
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[0];
     loadPhoto(TmpArray[0]);
@@ -303,6 +329,7 @@ loadThumbnail(currentPhoto);
   })
 
   $('#box1').click(() => {
+    myMoveDickAnimation();
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[1];
@@ -317,6 +344,7 @@ loadThumbnail(currentPhoto);
   })
 
   $('#box2').click(() => {
+    myMoveDickAnimation();
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[3];
@@ -327,6 +355,7 @@ loadThumbnail(currentPhoto);
   })
 
   $('#box3').click(() => {
+    myMoveDickAnimation();
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[3];
@@ -338,6 +367,7 @@ loadThumbnail(currentPhoto);
   })
 
   $('#box4').click(() => {
+    myMoveDickAnimation();
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[4];
@@ -415,3 +445,4 @@ document.addEventListener("keydown", function(event) {
 });
   
   
+
