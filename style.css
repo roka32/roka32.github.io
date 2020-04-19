@@ -462,20 +462,4 @@ p{
     vertical-align: middle ;
   }
 
-  /*arminnak egy kis vicc*/
-
-    
-  
-  #animate {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-image: url();
-    align-self: start;
-    top:0px;
-    visibility: hidden;
-  }
- /* #animate{
-    z-index: 10;
-  }*/
   

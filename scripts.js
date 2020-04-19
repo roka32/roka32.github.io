@@ -253,30 +253,10 @@ let loadThumbnail = (ZeroNum) =>{
 loadPhoto(currentPhoto);
 loadThumbnail(currentPhoto);
 
-/*-----------------------------------DICK*/
-function myMoveDickAnimation() {
-  $('#animate').css('visibility','visible');
- 
-     
-  var elem = document.getElementById("animate");   
-var pos = 0;
-var id = setInterval(frame, 5);
-function frame() {
-  if (pos == 600) {
-    $('#animate').css('visibility','hidden')
-    clearInterval(id);
-  } else {
-    pos++; 
-    elem.style.top = pos + "px"; 
-    elem.style.left = pos + "px"; 
-  }
-}
-  
-}
-/*-----------------------------------DICK*/
+
   
   $('#arrowRightCont').click(() => {
-    myMoveDickAnimation();
+    
     if(currentPhoto == imagesData.length-1){
         currentPhoto = -1;
     }
@@ -289,7 +269,7 @@ function frame() {
 
 
   $('#arrowLeftCont').click(() => {
-    myMoveDickAnimation();
+    
     if(currentPhoto === 0){
         currentPhoto = imagesData.length;
     }
@@ -317,7 +297,7 @@ function frame() {
   
 
   $('#box0').click(() => {
-    myMoveDickAnimation();
+    
     
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[0];
@@ -329,7 +309,7 @@ function frame() {
   })
 
   $('#box1').click(() => {
-    myMoveDickAnimation();
+    
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[1];
@@ -344,7 +324,7 @@ function frame() {
   })
 
   $('#box2').click(() => {
-    myMoveDickAnimation();
+    
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[3];
@@ -355,7 +335,7 @@ function frame() {
   })
 
   $('#box3').click(() => {
-    myMoveDickAnimation();
+    
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[3];
@@ -367,7 +347,7 @@ function frame() {
   })
 
   $('#box4').click(() => {
-    myMoveDickAnimation();
+    
 
     var TmpArray = loadThumbnail(currentPhoto).slice();
     currentPhoto=TmpArray[4];
