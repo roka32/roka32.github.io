@@ -245,8 +245,8 @@ let loadThumbnail = (ZeroNum) =>{
     $('.tooltiptext4').text( imagesData[mutate(array,ZeroNum+2)].tooltipp);
 
     $('.textpos').text(`${currentPhoto+1}/12`);
-    //let posArray = [mutate(array,ZeroNum-2),mutate(array,ZeroNum-1),mutate(array,ZeroNum),mutate(array,ZeroNum+1),mutate(array,ZeroNum+2)]
-   // return posArray;
+    let posArray = [mutate(array,ZeroNum-2),mutate(array,ZeroNum-1),mutate(array,ZeroNum),mutate(array,ZeroNum+1),mutate(array,ZeroNum+2)]
+    return posArray;
   
     }
   
