@@ -223,7 +223,7 @@ let loadThumbnail = (ZeroNum) =>{
     
    var array = [0,1, 2, 3, 4,5,6,7,8,9,10,11];
 
-   mutate = (arr,index) => {
+  let mutate = (arr,index) => {
     let lenght =array.length;
     if(Math.abs(index)%lenght ==0 ){ return arr[0]}
      let x = index > -1 ? arr[index%arr.length] :  arr[lenght-Math.abs(index)%lenght] ;
@@ -245,8 +245,8 @@ let loadThumbnail = (ZeroNum) =>{
     $('.tooltiptext4').text( imagesData[mutate(array,ZeroNum+2)].tooltipp);
 
     $('.textpos').text(`${currentPhoto+1}/12`);
-    let posArray = [mutate(array,ZeroNum-2),mutate(array,ZeroNum-1),mutate(array,ZeroNum),mutate(array,ZeroNum+1),mutate(array,ZeroNum+2)]
-    return posArray;
+    //let posArray = [mutate(array,ZeroNum-2),mutate(array,ZeroNum-1),mutate(array,ZeroNum),mutate(array,ZeroNum+1),mutate(array,ZeroNum+2)]
+   // return posArray;
   
     }
   
@@ -422,6 +422,8 @@ document.addEventListener("keydown", function(event) {
   if(event.which ==186){
     alert("Az 'é'-t se te gyökér...")
   }
+
+ 
 });
   
   
